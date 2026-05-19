@@ -1,1 +1,100 @@
-<h3>404 Not Found</h3>
+<!DOCTYPE html>
+<!-- Create by ijh5 -->
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 Not Found | Secret Trade</title>
+    <style>
+        body {
+            background-color: #08080a;
+            color: #8a8a93;
+            font-family: 'Courier New', Courier, monospace;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            line-height: 1.6;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .container {
+            text-align: center;
+            max-width: 650px;
+            width: 100%;
+        }
+
+        h3 {
+            font-size: 2.4rem;
+            color: #a31c1c;
+            margin: 0 0 5px 0;
+            letter-spacing: 0.05em;
+            font-weight: bold;
+        }
+
+        .site-brand {
+            font-size: 0.8rem;
+            color: #3e3e46;
+            letter-spacing: 0.5em;
+            text-transform: uppercase;
+            border-bottom: 1px solid #1c1c22;
+            padding-bottom: 18px;
+            margin-bottom: 25px;
+        }
+
+        .message {
+            font-size: 0.85rem;
+            color: #696970;
+            margin-bottom: 30px;
+            text-align: left;
+            text-indent: 1em;
+        }
+
+        .system-trace {
+            font-size: 0.75rem;
+            color: #2b753e;
+            text-align: left;
+            background-color: #030305;
+            border: 1px solid #141419;
+            padding: 20px;
+            font-family: 'Courier New', monospace;
+            white-space: pre-wrap;
+            word-break: break-all;
+            box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.8);
+        }
+
+        .blink {
+            animation: pulse 1.5s infinite;
+            color: #b32424;
+        }
+
+        @keyframes pulse {
+            0% { opacity: 0.2; }
+            50% { opacity: 1; }
+            100% { opacity: 0.2; }
+        }
+
+        .highlight {
+            color: #a31c1c;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h3>404 Not Found</h3>
+        <div class="site-brand">Secret Trade</div>
+
+        <div class="message">
+            要求されたリクエストは存在しないか、既にパージか削除されました。指定されたデータ領域へのアクセス権限、または必要な暗号化キーが一致しません。
+        </div>
+
+        <div class="system-trace" id="log-console"><span class="blink">●</span> INITIALIZING SECURITY TRACE...</div>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>
