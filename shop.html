@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asset Catalog | Secret Trade</title>
+    <style>
+        body {
+            background-color: #08080a;
+            color: #8a8a93;
+            font-family: 'Courier New', Courier, monospace;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            line-height: 1.6;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .container {
+            max-width: 700px;
+            width: 100%;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        header h2 {
+            font-size: 2rem;
+            color: #a31c1c;
+            margin: 0 0 5px 0;
+            letter-spacing: 0.1em;
+        }
+
+        .site-brand {
+            font-size: 0.8rem;
+            color: #3e3e46; /* 闇に沈むサイト名 */
+            letter-spacing: 0.5em;
+            text-transform: uppercase;
+        }
+
+        .market-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .item-card {
+            background-color: #030305;
+            border: 1px solid #141419;
+            padding: 20px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .item-card.sold-out {
+            border-color: #221010;
+            background-color: #040202;
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            border-bottom: 1px dashed #222226;
+            padding-bottom: 8px;
+            margin-bottom: 12px;
+        }
+
+        .item-title {
+            font-size: 1.1rem;
+            color: #b5b5bd;
+            font-weight: bold;
+        }
+
+        .item-price {
+            font-size: 1.2rem;
+            color: #2b753e;
+            font-family: monospace;
+        }
+
+        .sold-out .item-price {
+            color: #444;
+            text-decoration: line-through;
+        }
+
+        .item-desc {
+            font-size: 0.85rem;
+            color: #696970;
+            margin-bottom: 15px;
+        }
+
+        .status-badge {
+            font-size: 0.8rem;
+            color: #a31c1c;
+            background-color: rgba(163, 28, 28, 0.1);
+            border: 1px solid #a31c1c;
+            display: inline-block;
+            padding: 4px 12px;
+            letter-spacing: 0.1em;
+            font-weight: bold;
+        }
+      
+        .footer-notice {
+            font-size: 0.75rem;
+            color: #3b423d;
+            text-align: center;
+            border-top: 1px solid #1c1c22;
+            padding-top: 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h2>ASSET DEPOSIT</h2>
+            <div class="site-brand">Secret Trade Network</div>
+        </header>
+
+        <div class="market-grid">
+            <div class="item-card sold-out">
+                <div class="item-header">
+                    <div class="item-title">[BATCH-01] Xbox 4-Letter ID Account</div>
+                    <div class="item-price">¥2,000</div>
+                </div>
+                <div class="item-desc">
+                    初期作成・未ログインのXbox 4文字IDアカウント。安全なドメインに紐付け済み。譲渡後のリカバリー保証なし。
+                </div>
+                <div class="status-badge">OUT OF STOCK / 現在は販売していません</div>
+            </div>
+
+            <div class="item-card sold-out">
+                <div class="item-header">
+                    <div class="item-title">[BATCH-02] Xbox 4-Letter ID Raw Data</div>
+                    <div class="item-price">¥4,000</div>
+                </div>
+                <div class="item-desc">
+                    推測・取得可能なXbox 4文字IDのインテリジェンスデータリスト。高可用性。
+                </div>
+                <div class="status-badge">SUSPENDED / 現在は販売していません</div>
+            </div>
+        </div>
+
+        <div class="footer-notice">
+            [SYS] 在庫超過により新規取引を一時停止しています。<br>
+            [SYS] 次回のデータ補充時期は未定です。問い合わせは受け付けていません。
+        </div>
+    </div>
+
+</body>
+</html>
