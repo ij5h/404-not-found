@@ -115,6 +115,16 @@
             padding-top: 20px;
             margin-top: 20px;
         }
+        
+        .status-badge.in-stock { background-color: #2ecc71; color: white; }
+        .status-badge.rare-badge { background-color: #e67e22; color: white; }
+        .status-badge.ultra-rare { background-color: #9b59b6; color: white; font-weight: bold; }
+        .status-badge.mythic { 
+            background: linear-gradient(45deg, #f1c40f, #e74c3c); 
+            color: white; 
+            font-weight: bold;
+            animation: pulse 2s infinite;
+        }
     </style>
 </head>
 <body>
@@ -132,7 +142,7 @@
                     <div class="item-price">¥2,000</div>
                 </div>
                 <div class="item-desc">
-                    初期作成・未ログインのXbox 4文字IDアカウント。安全なドメインに紐付け済み。譲渡後のリカバリー保証なし。
+                    初期作成・未ログインのXbox 4文字IDアカウント。譲渡後のリカベーション保証なし。
                 </div>
                 <div class="status-badge">OUT OF STOCK / 現在は販売していません</div>
             </div>
@@ -143,9 +153,54 @@
                     <div class="item-price">¥4,000</div>
                 </div>
                 <div class="item-desc">
-                    推測・取得可能なXbox 4文字IDのインテリジェンスデータリスト。高可用性。
+                    取得可能なXbox 4文字IDを1つ。自己責任。
                 </div>
-                <div class="status-badge">SUSPENDED / 現在は販売していません</div>
+                <div class="status-badge">OUT OF STOCK / 現在は販売していません</div>
+            </div>
+
+            <!-- ここから新規追加アイテム -->
+            <div class="item-card">
+                <div class="item-header">
+                    <div class="item-title">[BATCH-03] Xbox 4-Letter ID (English Word)</div>
+                    <div class="item-price">¥10,000</div>
+                </div>
+                <div class="item-desc">
+                    意味のある英単語で構成された、希少性の高いXbox 4文字ID取得済みアカウント。
+                </div>
+                <div class="status-badge in-stock">IN STOCK / 販売中</div>
+            </div>
+
+            <div class="item-card">
+                <div class="item-header">
+                    <div class="item-title">[BATCH-04] Xbox 3-Letter ID (Random)</div>
+                    <div class="item-price">¥30,000</div>
+                </div>
+                <div class="item-desc">
+                    現在新規取得が極めて困難な、ランダム英数字のXbox 3文字ID取得済みアカウント。
+                </div>
+                <div class="status-badge rare-badge">RARE / 残りわずか</div>
+            </div>
+
+            <div class="item-card">
+                <div class="item-header">
+                    <div class="item-title">[BATCH-05] Xbox 3-Letter ID (English Word)</div>
+                    <div class="item-price">¥250,000</div>
+                </div>
+                <div class="item-desc">
+                    最高峰の価値を持つ、3文字の英単語（OG Gamertag）構成のプレミアムアカウント。
+                </div>
+                <div class="status-badge ultra-rare">PREMIUM / 限定1品</div>
+            </div>
+
+            <div class="item-card">
+                <div class="item-header">
+                    <div class="item-title">[BATCH-06] Xbox 3-Letter ID (Mono-Alphabet)</div>
+                    <div class="item-price">¥5,000,000</div>
+                </div>
+                <div class="item-desc">
+                    「aaa」「zzz」など、すべて同一のアルファベット3文字で構成された奇跡的なハイエンドアカウント。
+                </div>
+                <div class="status-badge mythic">MYTHIC / コレクターズアイテム</div>
             </div>
         </div>
 
